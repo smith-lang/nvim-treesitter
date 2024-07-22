@@ -1931,6 +1931,7 @@ list.smith = {
   install_info = {
     url = "https://github.com/smith-lang/tree-sitter-smith",
     files = { "src/parser.c" },
+    branch = "main",
   },
   maintainers = { "@adam-r-kowalski" },
 }
