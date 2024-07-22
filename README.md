@@ -63,7 +63,7 @@ For more detailed information on setting these up, see ["Advanced setup"](#advan
 
 ## Requirements
 
-- **Neovim 0.9.2** or later  ([nightly](https://github.com/neovim/neovim#install-from-source) recommended)
+- **Neovim 0.9.2** or later ([nightly](https://github.com/neovim/neovim#install-from-source) recommended)
 - `tar` and `curl` in your path (or alternatively `git`)
 - A C compiler in your path and libstdc++ installed ([Windows users please read this!](https://github.com/nvim-treesitter/nvim-treesitter/wiki/Windows-support)).
 
@@ -173,6 +173,7 @@ We are looking for maintainers to add more parsers and to write query files for 
 
 <!--This section of the README is automatically updated by a CI job-->
 <!--parserinfo-->
+
 - [x] [ada](https://github.com/briot/tree-sitter-ada) (maintained by @briot)
 - [x] [agda](https://github.com/tree-sitter/tree-sitter-agda) (maintained by @Decodetalkers)
 - [x] [angular](https://github.com/dlvandenberg/tree-sitter-angular) (experimental, maintained by @dlvandenberg)
@@ -394,6 +395,7 @@ We are looking for maintainers to add more parsers and to write query files for 
 - [x] [slang](https://github.com/theHamsta/tree-sitter-slang) (experimental, maintained by @theHamsta)
 - [x] [slint](https://github.com/slint-ui/tree-sitter-slint) (maintained by @hunger)
 - [x] [smali](https://github.com/tree-sitter-grammars/tree-sitter-smali) (maintained by @amaanq)
+- [x] [smith](https://github.com/smith-lang/tree-sitter-smith) (maintained by @adam-r-kowalski)
 - [x] [smithy](https://github.com/indoorvivants/tree-sitter-smithy) (maintained by @amaanq, @keynmol)
 - [ ] [snakemake](https://github.com/osthomas/tree-sitter-snakemake) (experimental)
 - [x] [solidity](https://github.com/JoranHonig/tree-sitter-solidity) (maintained by @amaanq)

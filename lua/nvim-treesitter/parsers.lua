@@ -1927,6 +1927,14 @@ list.snakemake = {
   experimental = true,
 }
 
+list.smith = {
+  install_info = {
+    url = "https://github.com/smith-lang/tree-sitter-smith",
+  },
+  maintainers = { "@adam-r-kowalski" },
+}
+
+
 list.smithy = {
   install_info = {
     url = "https://github.com/indoorvivants/tree-sitter-smithy",
