@@ -59,5 +59,7 @@
         (identifier) @function.call))
 
 (variable_definition
-    pattern: (identifier) @function
-    value: (function_definition))
+    pattern: (pattern_expression
+        (identifier) @function)
+    value: (expression
+        (function_definition)))
