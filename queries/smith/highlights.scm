@@ -52,6 +52,10 @@
 [
   ","
   ":"
+  "..="
+  "..<"
+  "..>"
+  ".."
 ] @punctuation.delimiter
 
 (function_call
@@ -63,3 +67,18 @@
         (identifier) @function)
     value: (expression
         (function_definition)))
+
+(variable_definition
+    pattern: (pattern_expression
+        (identifier) @type.definition)
+    value: (expression
+        (struct_definition)))
+
+
+(struct_field
+    type: (expression
+        (identifier) @type))
+
+(function_parameter
+    type: (expression
+        (identifier) @type))
