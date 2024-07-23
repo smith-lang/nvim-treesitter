@@ -48,3 +48,6 @@
   "{"
   "}"
 ] @punctuation.bracket
+
+(function_call
+    function: (identifier) @function)
