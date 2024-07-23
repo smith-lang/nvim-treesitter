@@ -95,3 +95,8 @@
     "?"
     (expression
         (identifier) @type))
+
+(unary_operation
+    "*"
+    (expression
+        (identifier) @type))
