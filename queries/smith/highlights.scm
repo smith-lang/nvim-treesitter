@@ -50,7 +50,7 @@
 ] @punctuation.bracket
 
 [
-  ",",
+  ","
   ":"
 ] @punctuation.delimiter
 
