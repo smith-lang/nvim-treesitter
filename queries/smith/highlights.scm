@@ -49,5 +49,14 @@
   "}"
 ] @punctuation.bracket
 
+[
+  ",",
+  ":"
+] @punctuation.delimiter
+
 (function_call
-    function: (identifier) @function)
+    function: (identifier) @function.call)
+
+(variable_definition
+    pattern: (identifier) @function
+    value: (function_definition))
