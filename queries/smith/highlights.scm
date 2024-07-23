@@ -55,7 +55,8 @@
 ] @punctuation.delimiter
 
 (function_call
-    function: (identifier) @function.call)
+    function: (expression
+        (identifier) @function.call))
 
 (variable_definition
     pattern: (identifier) @function
