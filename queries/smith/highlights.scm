@@ -74,11 +74,19 @@
     value: (expression
         (struct_definition)))
 
-
 (struct_field
     type: (expression
         (identifier) @type))
 
 (function_parameter
     type: (expression
+        (identifier) @type))
+
+(function_definition
+    return_type: (expression
+        (identifier) @type))
+
+(unary_operation
+    (array_literal)
+    (expression
         (identifier) @type))
