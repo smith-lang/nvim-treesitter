@@ -12,6 +12,7 @@
     (pointer)
     (option)
     "="
+    "in"
 ] @operator
 
 [
