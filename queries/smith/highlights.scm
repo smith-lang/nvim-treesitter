@@ -127,4 +127,10 @@
     (expression
         (identifier) @type))
 
+
+(binary_operation
+    operator: (dot)
+    right: (expression
+        (identifier) @variable.member))
+
 (comment) @comment @spell
