@@ -11,11 +11,11 @@
 ;  "."
 ; ] @operator
 
-[
- "not"
- "in"
- "or"
-] @keyword.operator
+; [
+;  "not"
+;  "in"
+;  "or"
+; ] @keyword.operator
 
 [
  "fn"
