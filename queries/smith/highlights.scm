@@ -43,18 +43,18 @@
     "test"
 ] @keyword
 
-[
-    (identifier "i8")
-    "i32"
-    "i64"
-    "u8"
-    "u32"
-    "u64"
-    "f32"
-    "f64"
-    "bool"
-    "str"
-] @type.builtin
+((identifier) @type.builtin
+    (#any-of? @type.builtin
+        "i8"
+        "i32"
+        "i64"
+        "u8"
+        "u32"
+        "u64"
+        "f32"
+        "f64"
+        "bool"
+        "str"))
 
 (integer_literal) @number
 
