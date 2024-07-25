@@ -1,112 +1,111 @@
-; [
-;  "|"
-;  ">"
-;  "<"
-;  "+"
-;  "-"
-;  "*"
-;  "/"
-;  "?"
-;  "=="
-;  "+="
-;  "."
-; ] @operator
+[
+ ">"
+ "<"
+ "+"
+ "-"
+ "*"
+ "/"
+ "?"
+ "=="
+ "+="
+ "."
+] @operator
 
-; [
-;  "not"
-;  "in"
-;  "or"
-; ] @keyword.operator
+[
+ "not"
+ "in"
+ "or"
+] @keyword.operator
 
-; [
-;  "fn"
-; ] @keyword.function
+[
+ "fn"
+] @keyword.function
 
-; [
-;  "struct"
-; ] @keyword.type
+[
+ "struct"
+] @keyword.type
 
-; [
-;  "if"
-;  "else"
-; ] @keyword.conditional
+[
+ "if"
+ "else"
+] @keyword.conditional
 
-; [
-;  "for"
-; ] @keyword.repeat
+[
+ "for"
+] @keyword.repeat
 
-;[
-; "mut"
-; "test"
-;] @keyword
+[
+"mut"
+"test"
+] @keyword
 
-; (integer_literal) @number
+(integer_literal) @number
 
-; (float_literal) @number
+(float_literal) @number
 
-; (string_literal) @string
+(string_literal) @string
 
-; (boolean_literal) @boolean
+(boolean_literal) @boolean
 
-; (identifier) @variable
+(identifier) @variable
 
-; [
-;   "("
-;   ")"
-;   "["
-;   "]"
-;   "{"
-;   "}"
-; ] @punctuation.bracket
+[
+  "("
+  ")"
+  "["
+  "]"
+  "{"
+  "}"
+] @punctuation.bracket
 
-; [
-;   ","
-;   ":"
-;   "..="
-;   "..<"
-;   "..>"
-;   ".."
-; ] @punctuation.delimiter
+[
+  ","
+  ":"
+  "..="
+  "..<"
+  "..>"
+  ".."
+] @punctuation.delimiter
 
-; (function_call
-;     function: (expression
-;         (identifier) @function.call))
+(function_call
+    function: (expression
+        (identifier) @function.call))
 
-; (variable_definition
-;     pattern: (pattern_expression
-;         (identifier) @function)
-;     value: (expression
-;         (function_definition)))
+(variable_definition
+    pattern: (pattern_expression
+        (identifier) @function)
+    value: (expression
+        (function_definition)))
 
-; (variable_definition
-;     pattern: (pattern_expression
-;         (identifier) @type.definition)
-;     value: (expression
-;         (struct_definition)))
+(variable_definition
+    pattern: (pattern_expression
+        (identifier) @type.definition)
+    value: (expression
+        (struct_definition)))
 
-; (struct_field
-;     type: (expression
-;         (identifier) @type))
+(struct_field
+    type: (expression
+        (identifier) @type))
 
-; (function_parameter
-;     type: (expression
-;         (identifier) @type))
+(function_parameter
+    type: (expression
+        (identifier) @type))
 
-; (function_definition
-;     return_type: (expression
-;         (identifier) @type))
+(function_definition
+    return_type: (expression
+        (identifier) @type))
 
-; (unary_operation
-;     (array_literal)
-;     (expression
-;         (identifier) @type))
+(unary_operation
+    (array_literal)
+    (expression
+        (identifier) @type))
 
-; (unary_operation
-;     "?"
-;     (expression
-;         (identifier) @type))
+(unary_operation
+    "?"
+    (expression
+        (identifier) @type))
 
-; (unary_operation
-;     "*"
-;     (expression
-;         (identifier) @type))
+(unary_operation
+    "*"
+    (expression
+        (identifier) @type))
