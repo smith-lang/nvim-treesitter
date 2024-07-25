@@ -43,8 +43,8 @@
     "test"
 ] @keyword
 
-((identifier) @type.builtin
-    (#any-of?
+((identifier) @number
+    (#any-of? @number
         "i8"
         "i32"
         "i64"
