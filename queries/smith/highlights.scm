@@ -7,10 +7,15 @@
  "*"
  "/"
  "?"
+ "=="
+ "+="
+ "."
 ] @operator
 
 [
  "not"
+ "in"
+ "or"
 ] @keyword.operator
 
 [
@@ -29,6 +34,11 @@
 [
  "for"
 ] @keyword.repeat
+
+[
+ "mut"
+ "test"
+] @keyword
 
 (integer_literal) @number
 
