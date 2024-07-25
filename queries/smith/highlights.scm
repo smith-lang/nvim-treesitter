@@ -7,7 +7,6 @@
     (subtract)
     (multiply)
     (divide)
-    (in)
     (dot)
     (negative)
     (pointer)
@@ -43,8 +42,8 @@
     "test"
 ] @keyword
 
-((identifier) @number
-    (#any-of? @number
+((identifier) @type.builtin
+    (#any-of? @type.builtin
         "i8"
         "i32"
         "i64"
