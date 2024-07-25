@@ -44,7 +44,7 @@
 ] @keyword
 
 [
-    "i8"
+    (identifier "i8")
     "i32"
     "i64"
     "u8"
