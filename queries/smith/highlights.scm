@@ -9,6 +9,9 @@
     (divide)
     (in)
     (dot)
+    (negative)
+    (pointer)
+    (option)
 ] @operator
 
 [
