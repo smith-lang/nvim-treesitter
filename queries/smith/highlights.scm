@@ -12,6 +12,7 @@
     (negative)
     (pointer)
     (option)
+    "="
 ] @operator
 
 [
@@ -41,6 +42,19 @@
     (mut)
     "test"
 ] @keyword
+
+[
+    "i8"
+    "i32"
+    "i64"
+    "u8"
+    "u32"
+    "u64"
+    "f32"
+    "f64"
+    "bool"
+    "str"
+] @type.builtin
 
 (integer_literal) @number
 
@@ -112,3 +126,5 @@
     (pointer)
     (expression
         (identifier) @type))
+
+(comment) @comment @spell
