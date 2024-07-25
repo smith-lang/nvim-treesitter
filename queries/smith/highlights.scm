@@ -1,21 +1,21 @@
 [
- (add)
- ; "<"
- ; "+"
- ; "-"
- ; "*"
- ; "/"
- ; "?"
- ; "=="
- ; "+="
- ; "."
+    (greater)
+    (less)
+    (equal)
+    (add_assign)
+    (add)
+    (subtract)
+    (multiply)
+    (divide)
+    (in)
+    (dot)
 ] @operator
 
-; [
-;  "not"
-;  "in"
-;  "or"
-; ] @keyword.operator
+[
+    (not)
+    (in)
+    (or)
+] @keyword.operator
 
 [
  "fn"
