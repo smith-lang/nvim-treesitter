@@ -34,10 +34,10 @@
  "for"
 ] @keyword.repeat
 
-[
-"mut"
-"test"
-] @keyword
+; [
+; "mut"
+; "test"
+; ] @keyword
 
 (integer_literal) @number
 
