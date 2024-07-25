@@ -21,26 +21,26 @@
 ] @keyword.operator
 
 [
- "fn"
+    "fn"
 ] @keyword.function
 
 [
- "struct"
+    "struct"
 ] @keyword.type
 
 [
- "if"
- "else"
+    "if"
+    "else"
 ] @keyword.conditional
 
 [
- "for"
+    "for"
 ] @keyword.repeat
 
-; [
-; "mut"
-; "test"
-; ] @keyword
+[
+    (mut)
+    "test"
+] @keyword
 
 (integer_literal) @number
 
@@ -103,12 +103,12 @@
     (expression
         (identifier) @type))
 
-; (unary_operation
-;     "?"
-;     (expression
-;         (identifier) @type))
+(unary_operation
+    (option)
+    (expression
+        (identifier) @type))
 
-; (unary_operation
-;     "*"
-;     (expression
-;         (identifier) @type))
+(unary_operation
+    (pointer)
+    (expression
+        (identifier) @type))
